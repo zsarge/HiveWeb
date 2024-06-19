@@ -1,0 +1,5 @@
+
+apachectl start
+
+bash
+

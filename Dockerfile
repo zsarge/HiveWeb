@@ -54,12 +54,10 @@ RUN apt-get install -y \
 # RUN make manifest
 # RUN make dist
 
-RUN apachectl start
-RUN apachectl status
-
 COPY . .
 
 EXPOSE 3000
 EXPOSE 80
 
-ENTRYPOINT bash
+ENTRYPOINT /app/script/startup-script.sh
+
